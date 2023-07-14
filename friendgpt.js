@@ -2,9 +2,9 @@ import axios from 'axios'
 
 
     
-const apiKey = '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';
+const apiKey = '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';
 // const prompt = 'Write me a song about Tanmoy.';
-const maxTokens = 10;
+const maxTokens = 100;
 const n = 1;
 const temperature = 0.7;
 
@@ -18,7 +18,7 @@ async function getResponse(socket, data){
         prompt:data.message,
         max_tokens: maxTokens,
         n,
-        temperature
+        temperature:0.7
     },
     {
         headers: {
